@@ -1,0 +1,131 @@
+html, body {}
+body {
+  background: #5F9EA0;
+  font: 13px/1.6 georgia;
+  color: black;
+  margin: 0px;
+  line-height: 25px;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: .7rem;
+}
+
+header {
+    padding-top:10px;
+}
+header .container{
+  max-width:980px;
+  display: flex;
+  position: relative;
+}
+header .line {
+  border-bottom: solid 1px red;
+  width:100%;
+}
+header .leftCol {
+  width:40%;
+  float:left;
+}
+header .rightCol {
+  width:90%;
+  text-align: right;
+  float: right;
+}
+header .rightCol .name{
+  padding-bottom:10px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+header .rightCol .career{
+  font-size:15px;
+  font-weight: normal;
+  line-height: 21px;
+}
+header .avatar {
+  background: url("../img/avatar.jpg");
+  background-size: cover;
+  border-radius: 70%;
+  display: inline-block;
+  width:90px;
+  height:90px;
+}
+
+h2.heading {
+  text-transform: uppercase;
+  margin: 1.75rem 0;
+  border-bottom: solid 1px red;
+  line-height: 2px;
+  font-weight: normal;
+  color:black;
+}
+h2.heading span{
+  background: #5F9EA0;
+  padding-right:10px;
+}
+.container {
+  max-width:980px;
+  margin: 0 auto;
+  padding:10px 20px;
+}
+#cats {
+  display: flex; 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+}
+#cats .portfolio-cat {
+  background: #DCD9B0;
+  width: 32%;
+  margin-bottom:2%;
+  text-align: center;
+}
+#cats .portfolio-cat img{
+  border-radius: 50%;
+}
+#cats .portfolio-cat .text_block{
+  padding: 0.25rem;
+}
+#cats .portfolio-cat h3{
+  font-size:20px;
+  color:red;
+}
+#cats .portfolio-cat:nth-child(3n-1) {
+  margin-right:2%;
+  margin-left:2%;
+}
+footer {
+  max-width:980px;
+  margin:0 auto;
+  padding:10px 20px;
+}
+/*Media Queries*/
+/*For devices with width between 600px and 850px*/
+@media screen and (min-width: 600px) and (max-width: 850px)  {
+  #cats .portfolio-cat{
+    width:49%;
+  }
+  #cats .portfolio-cat:nth-child(odd) {
+    margin-right:2%;
+    margin-left:0px;
+  }
+  #cats .portfolio-cat:nth-child(even) {
+    margin-right:0px;
+    margin-left:0px;
+  }
+}
+@media screen and (max-width: 600px)  {
+  #cats .portfolio-cat{
+    width:99%;
+    margin-right:0!important;
+    margin-left:0!important;
+    margin-bottom:20px;
+  }
+}
